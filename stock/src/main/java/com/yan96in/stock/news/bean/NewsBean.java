@@ -11,6 +11,8 @@ public class NewsBean {
 	private String newsId;
 	//新闻标题
 	private String newsTitle;
+	//新闻类型.1表示要闻,2表示7*24实时
+	private int newsType;
 	//新闻来源
 	private String newsSource;
 	//相关股票
