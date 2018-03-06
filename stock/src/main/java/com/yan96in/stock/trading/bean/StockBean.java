@@ -7,6 +7,7 @@ public class StockBean {
 	//股票代码
 	int stockCode;
 	//股票名称
-	int stockName;
-	
+	String stockName;
+	//公司编码
+	String companyCode;
 }
