@@ -1,4 +1,4 @@
-package com.yan96in.stock.user.bean;
+package com.yan96in.stock.personal.user.bean;
 //
 public class UserBean {
 	//用户id
