@@ -9,3 +9,4 @@
 - 爬虫研究
 - 新闻等数据来源收集
 - 分布式协调服务zookeeper使用
+- 加入单元测试JUnit和jesmine等

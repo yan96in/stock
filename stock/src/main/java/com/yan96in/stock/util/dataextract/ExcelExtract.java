@@ -3,6 +3,9 @@ package com.yan96in.stock.util.dataextract;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 /**
@@ -20,6 +23,10 @@ public class ExcelExtract {
 	public static void imp(String fileUrl) {
 		try {
 			HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileUrl));
+			 HSSFSheet sheet = workbook.getSheet("A股");
+			 HSSFRow row = sheet.getRow(0);
+			 HSSFCell cell=row.getCell((short)0);
+			 System.out.println(cell.getStringCellValue());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
